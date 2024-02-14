@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Interface</title>
+    <link rel="stylesheet" href="styleSurvey.css">
+</head>
+<body>
+    <div class="header-text">
+      <p>1.WHERE ARE YOU NOW? 1.WHERE ARE YOU NOW? 1.WHERE ARE YOU NOW? 1.WHERE ARE YOU NOW? 1.WHERE ARE YOU NOW? 1.WHERE ARE YOU NOW? 1.WHERE ARE YOU NOW? 1.WHERE ARE YOU NOW? </p> 
+      <p>1.WHERE ARE YOU NOW? 1.WHERE ARE YOU NOW? 1.WHERE ARE YOU NOW? 1.WHERE ARE YOU NOW? 1.WHERE ARE YOU NOW? 1.WHERE ARE YOU NOW? 1.WHERE ARE YOU NOW? 1.WHERE ARE YOU NOW? </p> 
+    </div>
+    <div class="survey-container">
+
+         <!-- 第一排的按钮 -->
+    <div class="button-row top-row">
+        <a class="button-link" onclick="registerchoice('lvl1','ocean')">
+            <img src="images/page1/1.png" alt="Top Button" class="button-image">
+            <div class="hover-image-container"> <!-- 设置关键字 -->
+                <img src="images/page1/h1.png" alt="Hover Image" class="hover-image">
+            </div>
+        </a>
+    </div>
+
+    <!-- 第二排的按钮 -->
+    <div class="button-row middle-row">
+        <a class="button-link" onclick="registerchoice('lvl1','mountain')">
+            <img src="images/page1/2.png" alt="Middle Left Button" class="button-image">
+            <div class="hover-image-container"> <!-- 设置不同的关键字 -->
+                <img src="images/page1/h2.png" alt="Hover Image" class="hover-image">
+            </div>
+        </a>
+        <a class="button-link" onclick="registerchoice('lvl1','forest')">
+            <img src="images/page1/3.png" alt="Middle Right Button" class="button-image">
+            <div class="hover-image-container"> <!-- 设置不同的关键字 -->
+                <img src="images/page1/h3.png" alt="Hover Image" class="hover-image">
+            </div>
+        </a>
+    </div>
+
+    <!-- 第三排的按钮 -->
+    <div class="button-row bottom-row">
+        <a class="button-link" onclick="registerchoice('lvl1','beach')">
+            <img src="images/page1/4.png" alt="Bottom Left Button" class="button-image">
+            <div class="hover-image-container"> <!-- 设置不同的关键字 -->
+                <img src="images/page1/h4.png" alt="Hover Image" class="hover-image">
+            </div>
+        </a>
+        <a class="button-link"  onclick="registerchoice('lvl1','city')">
+            <img src="images/page1/5.png" alt="Bottom Right Button" class="button-image">
+            <div class="hover-image-container"> <!-- 设置不同的关键字 -->
+                <img src="images/page1/h5.png" alt="Hover Image" class="hover-image">
+            </div>
+        </a>
+    </div>
+   
+    </div>
+    <div class="bottom-image-container">
+        <img src="images/page1/n.png" alt="page">
+    </div>
+    <script>
+        // Set a timeout to hide the loading screen and show the main content
+        function registerchoice(level, choice){
+            console.log(level);
+            localStorage.setItem(level, choice);
+            sessionStorage.setItem(level, choice);
+            location.replace("survey2.html");
+        }
+    </script>
+</body>
+</html>

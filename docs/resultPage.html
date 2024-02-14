@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Result!!</title>
+    <link rel="stylesheet" href="styleResult.css">
+    <!-- <script type="module" src="./script.js"></script> -->
+    <script type="module" crossorigin src="./assets/index-87cfe755.js"></script>
+</head>
+<body>
+    <script>
+        // Set a timeout to hide the loading screen and show the main content
+        console.log("html")
+        setTimeout(function() {
+            document.getElementById('loading').style.display = 'none';
+            document.querySelector('#resultsdiv').style.display = 'block';
+        }, 3000); // 3000 milliseconds = 3 seconds
+    </script>
+    <div id="loading"></div>
+    <div id="resultsdiv" style="height:100%"></div>
+
+    <div class="buttons-container">
+        <a href="about.html" class="button-link">
+            <img src="images/LANDINGPAGE/blueb.png" alt="about">
+            <span class="button-text">About</span>
+        </a>
+        <a href="gallery.html" class="button-link">
+            <img src="images/LANDINGPAGE/blueb.png" alt="gallery">
+            <span class="button-text">GALLERY</span>
+        </a>
+        <a href="share.html" class="button-link">
+            <img src="images/LANDINGPAGE/blueb.png" alt="share">
+            <span class="button-text">SHARE</span>
+        </a>
+    </div>
+</body>
+</html>

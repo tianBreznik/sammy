@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Interface</title>
+    <link rel="stylesheet" href="styleSurvey.css">
+</head>
+<body>
+    <div class="header-text">
+        <p>6.CHOOSE A VIRTUAL LUNCH FRIEND 6.CHOOSE A VIRTUAL LUNCH FRIEND 6.CHOOSE A VIRTUAL LUNCH FRIEND 6.CHOOSE A VIRTUAL LUNCH FRIEND 6.CHOOSE A VIRTUAL LUNCH FRIEND 6.CHOOSE A VIRTUAL LUNCH FRIEND</p>
+        <p>6.CHOOSE A VIRTUAL LUNCH FRIEND 6.CHOOSE A VIRTUAL LUNCH FRIEND 6.CHOOSE A VIRTUAL LUNCH FRIEND 6.CHOOSE A VIRTUAL LUNCH FRIEND 6.CHOOSE A VIRTUAL LUNCH FRIEND 6.CHOOSE A VIRTUAL LUNCH FRIEND</p>
+    </div>
+    <div class="survey-container">
+
+        <!-- 第一排的按钮 -->
+        <div class="button-row top-row">
+            <a class="button-link" onclick="registerchoice('lvl6','cat')">
+                <img src="images/page8/1.png" alt="Top Button" class="button-image">
+                <div class="hover-image-container">
+                    <img src="images/page8/h1.png" alt="Hover Image" class="hover-image">
+                </div>
+            </a>
+        </div>
+
+        <!-- 第二排的按钮 -->
+        <div class="button-row middle-row">
+            <a class="button-link" onclick="registerchoice('lvl6','dog')">
+                <img src="images/page8/2.png" alt="Middle Left Button" class="button-image">
+                <div class="hover-image-container">
+                    <img src="images/page8/h2.png" alt="Hover Image" class="hover-image">
+                </div>
+            </a>
+            <a class="button-link" onclick="registerchoice('lvl6','clean')">
+                <img src="images/page8/3.png" alt="Middle Right Button" class="button-image">
+                <div class="hover-image-container">
+                    <img src="images/page8/h3.png" alt="Hover Image" class="hover-image">
+                </div>
+            </a>
+        </div>
+
+        <!-- 第三排的按钮 -->
+        <div class="button-row bottom-row">
+            <a class="button-link" onclick="registerchoice('lvl6','girl')">
+                <img src="images/page8/4.png" alt="Bottom Left Button" class="button-image">
+                <div class="hover-image-container">
+                    <img src="images/page8/h4.png" alt="Hover Image" class="hover-image">
+                </div>
+            </a>
+            <a class="button-link" onclick="registerchoice('lvl6','cigarettes')">
+                <img src="images/page8/5.png" alt="Bottom Right Button" class="button-image">
+                <div class="hover-image-container">
+                    <img src="images/page8/h5.png" alt="Hover Image" class="hover-image">
+                </div>
+            </a>
+        </div>
+        
+    </div>
+    <div class="bottom-image-container">
+        <img src="images/page8/n.png" alt="page">
+    </div>
+    <script>
+        function registerchoice(level, choice){
+            console.log(level);
+            sessionStorage.setItem(level, choice);
+            location.replace("resultPage.html");
+        }
+    </script>
+</body>
+</html>

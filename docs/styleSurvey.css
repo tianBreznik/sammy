@@ -1,0 +1,127 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-image: url('images/QUESTIONPAGE/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* 添加或调整此属性 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('font/jgs5.ttf') format('truetype');
+}
+
+.header-text {
+    font-family: 'MyCustomFont', sans-serif; /* 使用 jgs5 字体，如果找不到则回退到 sans-serif */
+    font-size: 40px; /* 设置字体大小，根据需要调整 */
+    color: white; /* 设置字体颜色为白色 */
+    text-align: center; /* 文字居中显示 */
+    margin-top: 20px; /* 在顶部添加一些边距 */
+    text-align: right; /* 文字从右向左滚动，所以文字右对齐 */
+     white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%); /* 从右侧初始位置开始 */
+    }
+    100% {
+        transform: translateX(-100%); /* 滚动到左侧终点位置 */
+    }
+}
+
+.header-text {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.header-text p {
+    display: inline-block;
+    margin: 0;
+    animation: scroll-text 40s linear infinite;
+}
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.survey-container {
+    display: flex;
+    flex-direction: column; /* 子元素垂直排列 */
+    align-items: center; /* 子元素水平居中 */
+    justify-content: center; /* 子元素垂直居中 */
+    flex-grow: 1; /* 允许容器增长以填充可用空间 */
+    padding-top: 60px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center; /* 行内按钮水平居中 */
+    align-items: center; /* 行内按钮垂直居中 */
+    margin: 40px 0; /* 行与行之间的间距 */
+}
+
+.button-image {
+    width: 280px; /* 或者您希望的任何尺寸 */
+    height: auto; /* 保持图片的宽高比 */
+    margin: 0 80px; /* 按钮之间的间距 */
+    /* ...其他按钮样式... */
+}
+
+.button-link {
+    position: relative; /* 用于定位 hover-image */
+    display: inline-block; /* 包裹内容 */
+}
+
+.hover-image-container {
+    display: none; /* 默认不显示 */
+    position: fixed; /* 固定位置 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 居中显示 */
+    z-index: 100; /* 确保在顶层 */
+    opacity: 0; /* 默认透明 */
+    transition: opacity 0.5s ease, visibility 0s; /* 平滑过渡效果 */
+}
+
+.button-link:hover .hover-image-container {
+    display: block; /* 鼠标悬停时显示 */
+    opacity: 0.9; /* 设置悬停时图片的透明度为 80% */
+    cursor: pointer;
+}
+
+.hover-image {
+    width: 800px; /* 根据需要调整悬停图片大小 */
+    height: auto; /* 保持图片比例 */
+}
+
+.bottom-image-container {
+    width: 600px; /* 例如，设置一个固定的宽度值 */
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center;
+    margin-top: 20px; /* 顶部边距 */
+}
+
+.bottom-image-container img {
+    max-width: 100%; /* 确保图片不会超过容器宽度 */
+    height: auto; /* 保持图片的宽高比 */
+    /* 可以添加更多样式，如边距、阴影等 */
+}
+

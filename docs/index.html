@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personality 3000</title>
+    
+    
+  <script type="module" crossorigin src="./assets/index-87cfe755.js"></script>
+  <link rel="stylesheet" href="./assets/index-d7df9522.css">
+</head>
+<body>
+    <div id="loading"></div>
+    <div class="container">
+        <!-- “欢迎”图片 -->
+        <div class="welcome-image">
+            <img src="images/LANDINGPAGE/welcome.png" alt="Welcome">
+        </div>
+        <!-- 角色图像 -->
+        <div class="characters">
+            <!-- 左侧的角色 -->
+            <img src="images/LANDINGPAGE/left.png" alt="Left Character" class="character left">
+            <!-- 右上角的角色 -->
+            <img src="images/LANDINGPAGE/righttop.png" alt="Right Top Character" class="character right-top">
+            <!-- 右下角的角色 -->
+            <img src="images/LANDINGPAGE/rightbuttom.png" alt="Right Bottom Character" class="character right-bottom">
+        </div>
+         <!-- 特别按钮 -->
+         <div class="special-button-container">
+            <a href="survey1.html"><img src="images/LANDINGPAGE/letsgo.png" alt="Let's Gooo!!!" class="button special"></a>
+        </div>
+        <!-- 导航按钮 -->
+        <div class="buttons-container">
+            <a href="about.html" class="button-link button"><img src="images/LANDINGPAGE/blueb.png" alt="about"><span class="button-text">About</span></a>
+            <a href="gallery.html" class="button-link button"><img src="images/LANDINGPAGE/blueb.png" alt="gallery"><span class="button-text">GALLERY</span></a>
+            <a href="share.html" class="button-link button"><img src="images/LANDINGPAGE/blueb.png" alt="share"><span class="button-text">SHARE</span></a>
+        </div>
+    </div>
+    <script>
+        // Set a timeout to hide the loading screen and show the main content
+        setTimeout(function() {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('main-content').style.display = 'block';
+        }, 3000); // 3000 milliseconds = 3 seconds
+    </script>
+</body>
+</html>

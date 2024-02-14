@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* 视口高度 */
+    background-image: url('images/RESULTPAGE/background4.png'); /* 背景图片路径 */
+    background-size: cover; /* 背景图片覆盖整个元素 */
+    background-position: center; /* 背景图片居中 */
+    background-repeat: no-repeat; /* 不重复背景图片 */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* 内容靠底部对齐 */
+}
+
+@font-face {
+    font-family: 'jgs5';
+    src: url('font/jgs5.ttf') format('truetype');
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    margin-bottom: 10px; /* 底部边距 */
+}
+
+.button-link {
+    position: relative; /* 设置相对定位 */
+    display: inline-block; /* 使元素成为行内块级元素 */
+    text-decoration: none; /* 去除链接下划线 */
+}
+
+.button-link img {
+    max-width: 20%; /* 按钮最大宽度 */
+    height: auto; /* 高度自动，保持纵横比 */
+    display: block; /* 以块级元素显示 */
+    margin: auto; /* 水平居中 */
+}
+
+.button-text {
+    font-family: 'jgs5', sans-serif; 
+    font-size: 30px;
+    position: absolute; /* 绝对定位 */
+    top: 50%; /* 垂直居中 */
+    left: 50%; /* 水平居中 */
+    transform: translate(-50%, -50%); /* 精确居中 */
+    color: white; /* 文本颜色 */
+    font-weight: bold; /* 字体加粗 */
+    text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000; /* 黑色描边 */
+}
+
+.button-link:hover .button-text {
+    /* 鼠标悬停时的描边颜色变为粉色 */
+    text-shadow:
+        -1px -1px 0 #ec35f0,
+         1px -1px 0 #ec35f0,
+        -1px  1px 0 #ec35f0,
+         1px  1px 0 #ec35f0;
+}
+
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url('images/loading.png'); /* 替换为您的背景图片路径 */
+    background-size: cover;
+    background-position: center;
+    z-index: 9999;
+}
+
+.centered-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.centered-image img {
+    width: 600px; /* 设置图片的宽度 */
+    height: auto; /* 高度自动，保持纵横比 */
+}
+
+#resultsdiv {
+    position: absolute;
+    width: 740px; /* 设置容器的宽度 */
+    height: 430px; /* 设置容器的高度 */
+    /* border: 1px solid black; 可以添加边框以更好地可视化容器位置 */
+}
+  

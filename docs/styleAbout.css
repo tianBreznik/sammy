@@ -1,0 +1,31 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.about-container {
+    height: 100%;
+    background-image: url('images/ABOUTPAGE/background.png'); /* 替换为您的背景图片路径 */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button-link {
+    margin-top: auto; /* 确保按钮在容器中间偏下 */
+    margin-bottom: 5%; /* 根据需要调整 */
+}
+
+.about-button {
+    width: 150px; /* 根据按钮图片的尺寸调整 */
+    height: auto; /* 保持图片比例 */
+    cursor: pointer; /* 鼠标悬停时显示指针 */
+}
+
+/* 可以添加更多样式 */
