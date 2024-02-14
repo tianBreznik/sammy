@@ -22,6 +22,14 @@ const upper = 0x1F525;
   var imagetrail = 0;
   function printMousePos(event) {
 
+    if(!clickcount){
+      //document.getElementById("my_audio").play();
+      var audio = document.createElement("audio");
+      audio.src = "data/lovestoryreal.mp3";
+      var src = document.getElementById("giffcontainer");
+      src.appendChild(audio);
+      audio.play();
+    }
     console.log(document.getElementById("giffcontainer")); 
     var paragraph = document.createElement("p");
     // img.src = gif.embed_url;
